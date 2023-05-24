@@ -1,0 +1,10 @@
+$(".gmail_show").hide()
+        $("#req").click(function(){
+            $(".gmail_show").fadeIn(210)
+        })
+        $("#req2").click(function(){
+            $(".gmail_show").fadeIn(210)
+        })
+        $("#exit").click(function(){
+            $(".gmail_show").slideUp(1000)
+        })

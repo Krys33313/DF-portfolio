@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html scroll="be" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dmitriy Fadeev - The junior web-designer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/IconD.png" type="image/x-icon">
+    <!-- Библиотека JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="box" id="forup">
+        <nav>
+            <div class="page-padding">
+                <a class="name" href="index.html">Dmitriy Fadeev</a>
+                <div class="a_menu">
+                    <a href="#aboutme">About</a>
+                    <a href="#works">Works</a>
+                    <a href="#contacts">Contacts</a>
+                </div>
+                <button class="project_req" id="req">Project request></button>
+            </div>
+        </nav>
+        <header>
+            <div class="header_text">
+                <h1 class="headline">I junior<br>Frontend developer</h1>
+                <p class="podheadl">I'am frontend and little bit backend web-developer,
+                    <br>I will make a discount for my first client
+                </p>
+            </div>
+            <div class="header_img">
+                <img class="header__img_img" src="img/MyImg.png" alt="">
+            </div>
+        </header>
+        <main id="aboutme">
+            <h1 class="main__headline">About myself</h1>
+            <div class="aboutme_container">
+                <div class="aboutme">
+                    <div class="front-end">
+                        <h2 class="myskill">My skills in frontend</h2>
+                        <h3 class="front-endskill">HTML</h3>
+                        <h3 class="front-endskill">CSS</h3>
+                        <div class="graph_html"><h3 class="graph_perc">65%</h3></div>
+                        <div class="graph_css"><h3 class="graph_perc">84%</h3></div>
+                    </div>
+                    <div class="back-end">
+                        <h2 class="myskill">My skills in backend</h2>
+                        <h3 class="front-endskill">JavaScript</h3>
+                        <h3 class="front-endskill">JQuery</h3>
+                        <div class="graph_js"><h3 class="graph_perc">6%</h3></div>
+                        <div class="graph_jQuery"><h3 class="graph_perc">4%</h3></div>
+                    </div>
+                </div>
+                <div class="myselflive">
+                    <h2 class="myself__h2">About Me</h2>
+                    <p class="myself__p">I have been working as a web-developer and designer for 3 years.<br> I'm from Ukrain.<br> During my studies i did a couple of works which i will show below,<br>I speak English well<br> I'm quite sociable and I even have a small team<br>I really love web programming, but i am still studying in school so i dont have much free time<br>By the way, I was taught at ShKM(ШКМ), web development, for which I thank them very much</p>
+                </div>
+                <div class="main__img">
+                    <img src="img/myimgpart2.png" alt="">
+                </div>
+            </div>
+            <div id="works" class="my_works">
+                <h1 class="my_works_h1">My works</h1>
+                <a target="_blank" href="works/barber shop/index.html" class="work"><img src="img/barber_shop_img.jpg" alt=""></a>
+                <a target="_blank" href="works/My-site-main/index.html" class="work"><img src="img/space travel.jpg" alt=""></a>
+                <a target="_blank" href="works/Ukrainians/index.html" class="work"><img src="img/Ukrainians.jpg" alt=""></a>
+            </div>
+            <div class="start_work">
+                <h1 class="interested">Interested in<br> working together?</h1>
+                <button id="req2" class="project_req2">Start a project request ></button>
+            </div>
+        </main>
+        <footer id="contacts">
+            <h3 class="footer_h3">© 2023 Dmitriy Fadeev. All rights reserved.</h3>
+            <div class="contact">
+                <a class="telegram_a" target="_blank" href="https://web.telegram.org/z/#1330422402"><img class="telegram" src="https://cdn-icons-png.flaticon.com/512/2582/2582606.png" alt=""></a>
+                <a class="discord_a" target="_blank" href="https://discord.com/users/663803737357287424"><img class="discord" src="img/discord.png" alt=""></a>
+            </div>
+        </footer>
+        <div class="button_up">
+            <a class="arrow" href="#forup"><img src="img/arrowup.png" alt=""></a>
+        </div>
+    </div>
+    <div class="gmail_show">
+        <button class="exit" id="exit"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/%D0%98%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0_%D0%BA%D1%80%D0%B5%D1%81%D1%82%D0%B8%D0%BA%D0%B0_%28ei%29.svg/1200px-%D0%98%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0_%D0%BA%D1%80%D0%B5%D1%81%D1%82%D0%B8%D0%BA%D0%B0_%28ei%29.svg.png" alt=""></button>
+        <form>
+            <h1>Let's get started</h1>
+            <p class="describe">Please do not spam me, and describe everything in detail<br> and as clearly as possible</p>
+            <a class="gmail_a" href="mailto:azibest138@gmail.com"><h4>Get started</h4></a>
+        </form>
+        <div class="dop_inf"><img src="img/info.png" alt=""><h3 class="dop_h3">I only take on pure development projects, not design projects.</h3></div>
+    </div>
+    <script src="js/index.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".button_up").hide()
+        })
+        $(window).scroll(function(){
+            let w=$(window).scrollTop()
+            if(w>=300){
+                $(".button_up").fadeIn(210)
+            }
+            if(w<300){
+                $(".button_up").fadeOut(500)
+            }
+        })
+    </script>
+</body>
+</html>

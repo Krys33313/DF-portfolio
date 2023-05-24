@@ -1,0 +1,345 @@
+*{
+	border: 0;
+	padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	-moz-user-select: none;
+}
+html{
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+.box{
+	width: 100%
+	margin: 0 auto;
+	background: black;
+}
+.header{
+	width: 100%;
+	height: 600px;
+	overflow: hidden;             
+	background: url(../img/img.jpg);
+	background-size: 100%;
+} 
+.main{
+	width: 80%;
+	margin: 0 auto;
+}
+.info{
+	width: 100%;
+	border: 2px solid yellow;
+	height: 600px;
+	position: relative;
+}
+.planets p{
+	color: white;
+	margin: 0 0 5px;
+}
+.planets img{
+	width: 45%;
+	height: 300px;
+	float: right;
+}
+.planets{
+	width: 100%;
+	border: 2px solid yellow;
+	height: 568px;
+	display: none;
+	padding: 0 10px 0 10px;
+}
+.make_order{
+	width: 100%;
+	border: 2px solid yellow;
+	height: 300px;
+}
+.first_flight{
+	width: 100%;
+	border: 2px solid yellow;
+	height: 500px;
+}
+.earth{
+	width: 100%;
+	border: 2px solid yellow;
+	height: 630px;
+}
+.map{
+	width: 800px;
+	height: 450px;
+	margin-top: 0 auto;
+	position: relative;
+	background-size: 100%;
+}
+.map img:hover{
+	transform: scale(1.1);
+	transition: 1s;
+	cursor: pointer;
+}
+.map img{
+	position: absolute;
+}
+.description span{
+	color: #cc3300;
+}
+.euroazia{
+  	top: 0px;
+    left: 344px;
+}
+.afr{
+   top: 174px;
+    left: 337px;
+}
+.aust{
+   top: 277px;
+    left: 621px;
+}
+.uamer{
+   top: 241px;
+    left: 194px;
+}
+.description{
+	width: 50%;
+	height: 100px;
+	float: right;
+	padding: 5px;
+	color: white;
+	font-size: 16px;
+	border: 2px dotted white;
+}
+.block{
+	width: 32%;
+	height: 120px;
+	background: white;
+	opacity: 0.8;
+	position: absolute;
+	position: relative;
+	top: 250px;
+	left: 35%;
+	font-size: 46px;
+	text-align: center;
+	margin-top: -30px; 
+	z-index: 100;
+	font-family: 'Yellowtail', cursive;
+}
+.scene{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: -1px;
+}
+.one{
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	z-index: 10;
+	right: 100px;
+	overflow: hidden;
+}
+.two{
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	position: absolute;
+	z-index: 11;
+	right: 10px;
+	bottom: 400px;
+}
+.galaxy{
+	width: 300px;
+	height: 300px;
+}
+.header img{
+	width: 100%;
+	height: 100%;
+}
+h1{
+	text-align: center;
+	font-family: Arial;
+	color: #00cc66;
+	margin: 10px 0 10px;
+}
+.dg-wrapper{
+	width: 481px;
+	height: 316px;
+	margin: 0 auto;
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	-o-perspective: 1000px;
+	-ms-perspective: 1000px;
+	perspective: 1000px;
+}
+.dg-wrapper img.dg-transition{
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.dg-wrapper img{
+  display: block;
+  padding: 0px 0px 0px 1px;
+  width: 100%;
+  height: 316px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+}
+.box_order{
+	width: 100%;
+	height: 180px;
+	display: flex;
+	justify-content: space-between;
+}
+.box_order img{
+	width: 100%;
+	height: 100%;
+}
+.item{
+	width: 12%;
+	height: 180px;
+}
+.item p{
+	color: orange;
+	font-family: Arial;
+	text-align: center;
+}
+.fly_rocket{
+	width: 33%;
+	height: 496.2px;
+	position: relative;
+	float: left;
+}
+.fly_info{
+	width: 63%;
+	height: 500px;
+	float: right;
+}
+.fly_info h3{
+	color: whitesmoke;
+	font-family: Arial;
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 23px;
+}
+.fly_info p{
+	color: #330099;
+	text-align: left;
+	font-size: 1.05em;
+	line-height: 19px;
+}
+.clouds{
+	background: url("../img/clouds.jpg") repeat-y;
+	background-size: 100%;
+	width: 100%;
+	height: 100%;
+	animation: scroll 150s linear infinite;
+}
+@keyframes scroll
+{
+
+	100%{
+		background-position: 0 10000%;
+	}
+}
+.rocket{
+	width: 55%;
+	height: 350px;
+	background: url("../img/rocket.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 50% 75%;
+	position: absolute;
+	left: 22.5%;
+	top: 100px;
+}
+.footer{
+	width: 100%;
+	height: 150px;
+	border: 1px solid white;
+}
+.footer h2{
+	color: white;
+	display: block;
+	text-align: center;
+}
+.footer a{
+	color: white;
+	font-size: 18px;
+}
+.close{
+	display: none;
+	text-decoration: underline;
+	color: white;
+}
+.error1{
+	color: white;
+	width: 200px;
+	height: 60px;
+	margin-left: 410px;
+	margin-top: -61px;
+}
+.hideerror{
+	display: none;
+}
+.gmail{
+	display: none;
+	font-size: 16px;
+}
+.close{
+	text-decoration: underline;
+	display: none;
+}
+.telefon{
+	color: white;
+	font-size: 20px;
+	display: none;
+}
+.telefon2{
+	width: 200px;
+	margin-left: 200px;
+	height: 60px;
+}
+#MrScrollUp div {
+width: 149px;
+overflow: hidden;
+position: absolute;
+left: 0;
+top: 0;
+margin: 0;
+padding: 0;
+}
+#MrScrollUp .MrScrollUp1 {
+background: url(../js/MrScrollUp.png) no-repeat -149px 0;
+opacity: 0;
+height: 250px;
+display: none;
+z-index: 1;
+}
+#MrScrollUp .MrScrollUp2 {
+background: transparent;
+cursor: pointer;
+display: block;
+z-index: 2;
+height: 150px;
+}
+#MrScrollUp {
+z-index: 11;
+width: 149px;
+height: 250px;
+display: block;
+overflow: hidden;
+cursor: default;
+position: fixed;
+right: 0;
+top: 95%;
+background: url(../js/MrScrollUp.png) no-repeat 0 0;
+margin: -125px 0 0;
+padding: 0;
+}
